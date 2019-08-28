@@ -2,14 +2,13 @@ package com.marcosholgado.mymodule
 
 import android.os.Bundle
 import com.marcosholgado.core.ExpensiveObject
-import com.marcosholgado.core.NuwaInjectorActivity
-import com.marcosholgado.core.di.NuwaInjector
-import dagger.android.support.DaggerAppCompatActivity
+import com.marcosholgado.core.AzwraithInjectorActivity
+import com.marcosholgado.core.di.AzwraithEntry
 import kotlinx.android.synthetic.main.activity_other.*
 import java.util.*
 import javax.inject.Inject
 
-class OtherActivity : NuwaInjectorActivity() {
+class OtherActivity : AzwraithInjectorActivity() {
 
     @Inject
     lateinit var expensiveObject: ExpensiveObject
@@ -26,7 +25,7 @@ class OtherActivity : NuwaInjectorActivity() {
         textView.text = date.toString()
     }
 
-    override fun getInjector(): NuwaInjector {
+    override fun getInjector(): AzwraithEntry {
         return Entry
     }
 }

@@ -1,6 +1,6 @@
 package com.marcosholgado.core
 
-import com.marcosholgado.daggerplayground.di.CoreComponent
+import com.marcosholgado.core.di.CoreComponent
 
 
 object CoreComponentHolder {

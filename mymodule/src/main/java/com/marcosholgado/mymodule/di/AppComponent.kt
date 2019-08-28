@@ -1,6 +1,6 @@
 package com.marcosholgado.mymodule.di
 
-import com.marcosholgado.daggerplayground.di.CoreComponent
+import com.marcosholgado.core.di.CoreComponent
 import com.marcosholgado.mymodule.Entry
 import dagger.BindsInstance
 import dagger.Component

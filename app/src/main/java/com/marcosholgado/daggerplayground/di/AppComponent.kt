@@ -2,6 +2,7 @@ package com.marcosholgado.daggerplayground.di
 
 import android.app.Application
 import com.marcosholgado.MyApplication
+import com.marcosholgado.core.di.CoreComponent
 import dagger.Component
 import dagger.android.AndroidInjector
 import dagger.android.support.AndroidSupportInjectionModule

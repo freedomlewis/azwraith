@@ -16,7 +16,7 @@ import dagger.android.HasContentProviderInjector;
 import dagger.android.HasFragmentInjector;
 import dagger.android.HasServiceInjector;
 
-public abstract class NuwaInjector
+public abstract class AzwraithEntry
         implements HasActivityInjector,
         HasFragmentInjector,
         HasServiceInjector,
@@ -39,15 +39,15 @@ public abstract class NuwaInjector
         injectIfNecessary();
     }
 
-    protected abstract AndroidInjector<? extends NuwaInjector> applicationInjector();
+    protected abstract AndroidInjector<? extends AzwraithEntry> applicationInjector();
 
     private void injectIfNecessary() {
         if (needToInject) {
             synchronized (this) {
                 if (needToInject) {
                     @SuppressWarnings("unchecked")
-                    AndroidInjector<NuwaInjector> applicationInjector =
-                            (AndroidInjector<NuwaInjector>) applicationInjector();
+                    AndroidInjector<AzwraithEntry> applicationInjector =
+                            (AndroidInjector<AzwraithEntry>) applicationInjector();
                     applicationInjector.inject(this);
                     if (needToInject) {
                         throw new IllegalStateException(

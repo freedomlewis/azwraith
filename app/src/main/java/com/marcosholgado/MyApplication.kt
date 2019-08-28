@@ -2,9 +2,9 @@ package com.marcosholgado
 
 import com.marcosholgado.core.CoreComponentHolder
 import com.marcosholgado.core.di.CoreComponentProvider
-import com.marcosholgado.daggerplayground.di.CoreComponent
+import com.marcosholgado.core.di.CoreComponent
+import com.marcosholgado.core.di.DaggerCoreComponent
 import com.marcosholgado.daggerplayground.di.DaggerAppComponent
-import com.marcosholgado.daggerplayground.di.DaggerCoreComponent
 import com.marcosholgado.mymodule.Entry
 import dagger.android.DaggerApplication
 import dagger.android.AndroidInjector

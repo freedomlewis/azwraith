@@ -2,19 +2,19 @@ package com.marcosholgado.core;
 
 import android.app.Activity;
 
-import com.marcosholgado.core.di.NuwaInjector;
+import com.marcosholgado.core.di.AzwraithEntry;
 
 import dagger.android.AndroidInjector;
 import dagger.android.HasActivityInjector;
 
 import static dagger.internal.Preconditions.checkNotNull;
 
-public final class NuwaInjection {
+public final class AzwraithInjection {
     private static final String TAG = "dagger.android";
 
-    public static void inject(NuwaInjectorActivity activity) {
+    public static void inject(AzwraithInjectorActivity activity) {
         checkNotNull(activity, "activity");
-        NuwaInjector injector = activity.getInjector();
+        AzwraithEntry injector = activity.getInjector();
         if (injector == null) {
             throw new RuntimeException(
                     String.format(
@@ -30,7 +30,7 @@ public final class NuwaInjection {
         activityInjector.inject(activity);
     }
 
-    private NuwaInjection() {
+    private AzwraithInjection() {
     }
 }
 

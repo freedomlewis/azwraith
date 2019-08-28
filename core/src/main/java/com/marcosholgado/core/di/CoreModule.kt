@@ -1,4 +1,4 @@
-package com.marcosholgado.daggerplayground.di
+package com.marcosholgado.core.di
 
 import com.marcosholgado.core.ExpensiveObject
 import dagger.Module

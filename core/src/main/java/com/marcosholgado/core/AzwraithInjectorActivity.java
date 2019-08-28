@@ -6,7 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.marcosholgado.core.di.NuwaInjector;
+import com.marcosholgado.core.di.AzwraithEntry;
 
 import javax.inject.Inject;
 
@@ -15,7 +15,7 @@ import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasFragmentInjector;
 import dagger.android.support.HasSupportFragmentInjector;
 
-public abstract class NuwaInjectorActivity extends AppCompatActivity
+public abstract class AzwraithInjectorActivity extends AppCompatActivity
         implements HasFragmentInjector, HasSupportFragmentInjector {
 
     //todo 需参考DaggerAppCompatActivity来实现Fragment注解的委派
@@ -26,7 +26,7 @@ public abstract class NuwaInjectorActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        NuwaInjection.inject(this);
+        AzwraithInjection.inject(this);
         super.onCreate(savedInstanceState);
     }
 
@@ -40,6 +40,6 @@ public abstract class NuwaInjectorActivity extends AppCompatActivity
         return frameworkFragmentInjector;
     }
 
-    public abstract NuwaInjector getInjector();
+    public abstract AzwraithEntry getInjector();
 }
 
